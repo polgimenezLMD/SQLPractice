@@ -30,6 +30,7 @@ private slots:
     void ExportJSON();
     void ImportJSON();
     void DeleteRows();
+    void OpenAbout();
 
 private:
     Ui::SQLPractice *ui;

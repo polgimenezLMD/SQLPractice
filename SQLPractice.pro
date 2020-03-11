@@ -19,15 +19,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    about.cpp \
     jsonparser.cpp \
     main.cpp \
     sqlpractice.cpp
 
 HEADERS += \
+    about.h \
     jsonparser.h \
     sqlpractice.h
 
 FORMS += \
+    about.ui \
     sqlpractice.ui
 
 # Default rules for deployment.

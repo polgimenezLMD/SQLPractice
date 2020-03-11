@@ -1,5 +1,6 @@
 #include "sqlpractice.h"
 #include "jsonparser.h"
+#include "about.h"
 #include <QListWidget>
 #include <QDebug>
 #include <QSqlError>
@@ -18,6 +19,7 @@ SQLPractice::SQLPractice() : QMainWindow(), ui(new Ui::SQLPractice)
     connect(ui->actionOpen_File,SIGNAL(triggered()),this,SLOT(FileSelection()));
     connect(ui->actionJSON,SIGNAL(triggered()),this,SLOT(ExportJSON()));
     connect(ui->actionJSON_2,SIGNAL(triggered()),this,SLOT(ImportJSON()));
+    connect(ui->actionAbout,SIGNAL(triggered()),this,SLOT(OpenAbout()));
 }
 
 SQLPractice::~SQLPractice()
@@ -147,3 +149,9 @@ void SQLPractice::DeleteRows()
     SettingSelection();
 }
 
+void SQLPractice::OpenAbout()
+{
+    About about;
+    about.setModal(true);
+    about.exec();
+}
