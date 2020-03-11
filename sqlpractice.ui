@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SQLPractice</class>
+ <widget class="QMainWindow" name="SQLPractice">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SQLPractice</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QListWidget" name="listWidget"/>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_Ope">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_File"/>
+   </widget>
+   <widget class="QMenu" name="menuExport">
+    <property name="title">
+     <string>Export</string>
+    </property>
+    <addaction name="actionJSON"/>
+   </widget>
+   <widget class="QMenu" name="menuImport">
+    <property name="title">
+     <string>Import</string>
+    </property>
+    <addaction name="actionJSON_2"/>
+   </widget>
+   <addaction name="menuFile_Ope"/>
+   <addaction name="menuExport"/>
+   <addaction name="menuImport"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionJSON">
+   <property name="text">
+    <string>JSON</string>
+   </property>
+  </action>
+  <action name="actionJSON_2">
+   <property name="text">
+    <string>JSON</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
