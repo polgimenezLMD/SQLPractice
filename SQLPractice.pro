@@ -21,16 +21,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     about.cpp \
     jsonparser.cpp \
+    login.cpp \
     main.cpp \
     sqlpractice.cpp
 
 HEADERS += \
     about.h \
     jsonparser.h \
+    login.h \
     sqlpractice.h
 
 FORMS += \
     about.ui \
+    login.ui \
     sqlpractice.ui
 
 # Default rules for deployment.
