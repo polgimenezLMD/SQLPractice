@@ -10,4 +10,5 @@ int main(int argc, char *argv[])
     return a.exec();
 
     // Line to be added in master
+    // Line test B
 }
