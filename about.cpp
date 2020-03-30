@@ -11,7 +11,6 @@ About::About(QWidget *parent) :
 About::~About()
 {
     delete ui;
-    // Line to ignore in master
 }
 
 void About::on_pushButton_clicked()
