@@ -52,4 +52,3 @@ QJsonArray JSONParser::JSONImport(QString fileJSON){
     QJsonArray json_array = doc.array();
     return json_array;
 }
-
