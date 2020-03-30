@@ -8,4 +8,6 @@ int main(int argc, char *argv[])
     SQLPractice *w = new SQLPractice();
     w->show();
     return a.exec();
+
+    // Added in testC
 }
